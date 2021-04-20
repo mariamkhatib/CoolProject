@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="movie_by_method">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="method" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_by_methodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_by_methodResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_by_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_by_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_by_idResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_by_title">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_by_titleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_by_titleResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fillpicture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fillpictureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fillpictureResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_title">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_titleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_titleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_plot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_plotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_plotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_genre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_genreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_genreResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="movie_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="movie_idResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="movie_by_methodSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_by_method" />
+  </wsdl:message>
+  <wsdl:message name="movie_by_methodSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_by_methodResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_by_idSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_by_id" />
+  </wsdl:message>
+  <wsdl:message name="movie_by_idSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_by_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_by_titleSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_by_title" />
+  </wsdl:message>
+  <wsdl:message name="movie_by_titleSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_by_titleResponse" />
+  </wsdl:message>
+  <wsdl:message name="fillpictureSoapIn">
+    <wsdl:part name="parameters" element="tns:fillpicture" />
+  </wsdl:message>
+  <wsdl:message name="fillpictureSoapOut">
+    <wsdl:part name="parameters" element="tns:fillpictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_titleSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_title" />
+  </wsdl:message>
+  <wsdl:message name="movie_titleSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_titleResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_plotSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_plot" />
+  </wsdl:message>
+  <wsdl:message name="movie_plotSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_plotResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_genreSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_genre" />
+  </wsdl:message>
+  <wsdl:message name="movie_genreSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_genreResponse" />
+  </wsdl:message>
+  <wsdl:message name="movie_idSoapIn">
+    <wsdl:part name="parameters" element="tns:movie_id" />
+  </wsdl:message>
+  <wsdl:message name="movie_idSoapOut">
+    <wsdl:part name="parameters" element="tns:movie_idResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="movie_by_method">
+      <wsdl:input message="tns:movie_by_methodSoapIn" />
+      <wsdl:output message="tns:movie_by_methodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_id">
+      <wsdl:input message="tns:movie_by_idSoapIn" />
+      <wsdl:output message="tns:movie_by_idSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_title">
+      <wsdl:input message="tns:movie_by_titleSoapIn" />
+      <wsdl:output message="tns:movie_by_titleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fillpicture">
+      <wsdl:input message="tns:fillpictureSoapIn" />
+      <wsdl:output message="tns:fillpictureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_title">
+      <wsdl:input message="tns:movie_titleSoapIn" />
+      <wsdl:output message="tns:movie_titleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_plot">
+      <wsdl:input message="tns:movie_plotSoapIn" />
+      <wsdl:output message="tns:movie_plotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_genre">
+      <wsdl:input message="tns:movie_genreSoapIn" />
+      <wsdl:output message="tns:movie_genreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="movie_id">
+      <wsdl:input message="tns:movie_idSoapIn" />
+      <wsdl:output message="tns:movie_idSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="movie_by_method">
+      <soap:operation soapAction="http://tempuri.org/movie_by_method" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_id">
+      <soap:operation soapAction="http://tempuri.org/movie_by_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_title">
+      <soap:operation soapAction="http://tempuri.org/movie_by_title" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fillpicture">
+      <soap:operation soapAction="http://tempuri.org/fillpicture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_title">
+      <soap:operation soapAction="http://tempuri.org/movie_title" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_plot">
+      <soap:operation soapAction="http://tempuri.org/movie_plot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_genre">
+      <soap:operation soapAction="http://tempuri.org/movie_genre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_id">
+      <soap:operation soapAction="http://tempuri.org/movie_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="movie_by_method">
+      <soap12:operation soapAction="http://tempuri.org/movie_by_method" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_id">
+      <soap12:operation soapAction="http://tempuri.org/movie_by_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_by_title">
+      <soap12:operation soapAction="http://tempuri.org/movie_by_title" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fillpicture">
+      <soap12:operation soapAction="http://tempuri.org/fillpicture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_title">
+      <soap12:operation soapAction="http://tempuri.org/movie_title" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_plot">
+      <soap12:operation soapAction="http://tempuri.org/movie_plot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_genre">
+      <soap12:operation soapAction="http://tempuri.org/movie_genre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="movie_id">
+      <soap12:operation soapAction="http://tempuri.org/movie_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:54924/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:54924/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

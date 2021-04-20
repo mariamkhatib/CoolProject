@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User_Page.master.cs" Inherits="User_Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css"	 type="text/css" media="all" />
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+           
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slider -->
+		<div class="slider">
+			<ul class="rslides" id="slider">
+				<li class="second-slide">
+					<img src="slideimage/slide-2.jpg" />
+				</li>
+				<li class="third-slide">
+					<img src="slideimage/slide-3.jpg" />
+				</li>
+				<li class="fourth-slide">
+					<img src="slideimage/slide-4.jpg" />
+				</li>
+				<li class="fifth-slide">
+					<img src="slideimage/slide-5.jpg" />
+                    </li>
+			</ul>
+		</div>
+		<!-- //Slider -->
+
+
+    <form id="form1" runat="server">
+    <div><a href ="Login.aspx">ADMIN</a></div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+    </form>
+</body>
+</html>

@@ -3,48 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite9", "..\..\WebSites\WebSite9\", "{22A1D8EB-83C1-4B33-999B-66379ABB77D8}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite9(1)", "WebSite9\", "{43FD0AB3-2B22-483C-A73D-F8118E1FC479}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_51796"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite9\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51796\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51091"
+		Debug.AspNetCompiler.PhysicalPath = "WebSite9\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51091\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_51796"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebSite9\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51796\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51091"
+		Release.AspNetCompiler.PhysicalPath = "WebSite9\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51091\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "51796"
-		SlnRelativePath = "..\..\WebSites\WebSite9\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "51091"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebServiceOmdbapi", "..\..\WebSites\WebServiceOmdbapi\", "{EBE6D68E-C3C7-445F-97F6-DD99394C37F1}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebServiceOmdbapi(1)", "WebServiceOmdbapi\", "{BE140626-F6ED-4154-AEFA-00C830FD4CB6}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_54924"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebServiceOmdbapi\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54924\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51093"
+		Debug.AspNetCompiler.PhysicalPath = "WebServiceOmdbapi\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51093\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_54924"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebServiceOmdbapi\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54924\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51093"
+		Release.AspNetCompiler.PhysicalPath = "WebServiceOmdbapi\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51093\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "54924"
-		SlnRelativePath = "..\..\WebSites\WebServiceOmdbapi\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "51093"
 	EndProjectSection
 EndProject
 Global
@@ -52,10 +48,10 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{22A1D8EB-83C1-4B33-999B-66379ABB77D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22A1D8EB-83C1-4B33-999B-66379ABB77D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBE6D68E-C3C7-445F-97F6-DD99394C37F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBE6D68E-C3C7-445F-97F6-DD99394C37F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FD0AB3-2B22-483C-A73D-F8118E1FC479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FD0AB3-2B22-483C-A73D-F8118E1FC479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE140626-F6ED-4154-AEFA-00C830FD4CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE140626-F6ED-4154-AEFA-00C830FD4CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
